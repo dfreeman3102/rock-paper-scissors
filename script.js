@@ -14,41 +14,40 @@ var comp = Math.floor(Math.random() * 3);
 // what happens depending on choice
 
 if(input ==="R"){
-    console.log("Player chose Rock");
+    alert("Player chose Rock");
 } else if (input ==="P"){
- console.log("Player chose Paper");
+ alert("Player chose Paper");
 } else if (input ==="S"){
-    console.log("Player chose Scissors");
+    alert("Player chose Scissors");
 } else {
-    console.log("invalid choice");
+    alert("invalid choice");
 }
 
 if(comp === 0){
-    console.log("Computer chose Rock");
+   alert("Computer chose Rock");
 } else if (comp === 1){
- console.log("Computer chose Paper");
+ alert("Computer chose Paper");
 } else if (comp === 2){
-    console.log("Computer chose Scissors");
+    alert("Computer chose Scissors");
 } 
 
 
 if (input === "R" && comp === 1) {
-    console.log("Computer wins");
+    alert("Computer wins");
 } else if (input === "R" && comp === 2){
-    console.log("Player wins");
+    alert("Player wins");
 } else if (input === "P" && comp === 0){
-    console.log("Player wins");
+   alert("Player wins");
 } else if(input === "P" && comp === 2){
-    console.log("Computer wins");
+    alert("Computer wins");
 } else if(input === "S" && comp === 0){
-    console.log("Computer wins");
+    alert("Computer wins");
 } else if(input === "S" && comp === 1){
-    console.log("Player wins");
+    alert("Player wins");
 } else {
-    console.log("Tie, try again");
+   alert("Tie, try again");
 }
 
 
-
-// alert("Stats ");
+// play again or no?
 // confirm("Do you want to play again?");
