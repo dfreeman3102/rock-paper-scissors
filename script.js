@@ -1,13 +1,14 @@
 var input = prompt("Type R, P, S");
 
 // variables for rock, paper, scissors
-var R = 1;
-var P = 2;
-var S = 3;
+var R = 0;
+var P = 1;
+var S = 2;
 
 // code for computer to choose
 
-
+var comp = Math.floor(Math.random()*3);
+console.log(comp);
 
 
 // what happens depending on choice
