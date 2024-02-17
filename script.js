@@ -45,9 +45,12 @@ if (input === "R" && comp === 1) {
 } else if(input === "S" && comp === 1){
     alert("Player wins");
 } else {
-   alert("Tie, try again");
+    alert("Tie, try again");
 }
 
 
 // play again or no?
-// confirm("Do you want to play again?");
+var confirmation = confirm("Play Again?");
+if(confirmation==true){
+    location.reload();
+}
