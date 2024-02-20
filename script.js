@@ -1,6 +1,4 @@
-function play(){
-//User choice
-var input = prompt("Type R, P, S", "R");
+
 // variables for rock, paper, scissors
 // var R = 0;
 // var P = 1;
@@ -8,6 +6,11 @@ var input = prompt("Type R, P, S", "R");
 var playerWins=0;
 var compWins=0;
 var ties=0;
+
+function play(){
+//User choice
+var input = prompt("Type R, P, S", "R");
+
 // code for computer choice
 
 var comp = Math.floor(Math.random() * 3);
