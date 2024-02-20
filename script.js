@@ -1,3 +1,4 @@
+function play(){
 //User choice
 var input = prompt("Type R, P, S", "R");
 // variables for rock, paper, scissors
@@ -35,30 +36,38 @@ if (comp === 0) {
 
 if (input === "R" && comp === 1) {
     alert("Computer wins");
-    alert("Computer wins: " + compWins + 1);
+    compWins = compWins +1;
+    alert("Computer wins: " + compWins);
 } else if (input === "R" && comp === 2) {
     alert("Player wins");
-    alert("Player wins: " + playerWins + 1);
+    playerWins = playerWins + 1;
+    alert("Player wins: " + playerWins);
 } else if (input === "P" && comp === 0) {
     alert("Player wins");
-    alert("Player wins: " + playerWins + 1);
+    playerWins = playerWins + 1;
+    alert("Player wins: " + playerWins);
 } else if (input === "P" && comp === 2) {
     alert("Computer wins");
-    alert("Computer wins: " + compWins + 1);
+    compWins = compWins +1;
+    alert("Computer wins: " + compWins);
 } else if (input === "S" && comp === 0) {
     alert("Computer wins");
-    alert("Computer wins: " + compWins + 1);
+    compWins = compWins +1;
+    alert("Computer wins: " + compWins);
 } else if (input === "S" && comp === 1) {
     alert("Player wins");
-    alert("Player wins: " + playerWins + 1);
+    playerWins = playerWins + 1;
+    alert("Player wins: " + playerWins);
 } else {
     alert("Tie, try again");
-    alert("Ties: " + ties + 1);
+    ties = ties +1;
+    alert("Ties: " + ties);
 }
-
-
 // play again or no?
 var confirmation = confirm("Play Again?");
 if (confirmation == true) {
-    location.reload();
+    play();
 }
+}
+play();
+
